@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supporto — App Scioperi</title>
+  <meta name="description" content="Assistenza e domande frequenti per l'app Scioperi.">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-card: #1e293b;
+      --accent: #38bdf8;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      padding: 3.5rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    header p {
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 3rem;
+    }
+    .card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid #334155;
+    }
+    .card h2 {
+      font-size: 1.05rem;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+    .card p {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .card p + p {
+      margin-top: 0.6rem;
+    }
+    a {
+      color: var(--accent);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Supporto</h1>
+    <p>Domande frequenti e assistenza per l'app Scioperi</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Come funzionano gli avvisi?</h2>
+      <p>Nella sezione "I miei avvisi" puoi creare un avviso indicando un periodo di date, uno o più mezzi di trasporto e, facoltativamente, una regione o provincia. L'app ti mostra subito eventuali scioperi corrispondenti e ti invia una notifica push se ne emergono di nuovi in seguito.</p>
+    </div>
+
+    <div class="card">
+      <h2>Da dove vengono i dati sugli scioperi?</h2>
+      <p>I dati provengono direttamente dal sito del Ministero delle Infrastrutture e dei Trasporti (MIT), e vengono aggiornati automaticamente più volte al giorno.</p>
+    </div>
+
+    <div class="card">
+      <h2>Non ricevo le notifiche push</h2>
+      <p>Verifica che le notifiche siano abilitate per l'app in Impostazioni iOS → Notifiche → Scioperi. Assicurati anche di avere almeno un avviso attivo che corrisponda a uno sciopero in programma.</p>
+    </div>
+
+    <div class="card">
+      <h2>L'app richiede la mia posizione o dati personali?</h2>
+      <p>No. Scioperi non richiede registrazione né raccoglie dati personali identificabili. La regione/provincia si seleziona manualmente. Per i dettagli completi, consulta la <a href="/privacy-it.html">informativa sulla privacy</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Hai trovato un problema o hai un suggerimento?</h2>
+      <p>Scrivici a <a href="mailto:info@aportsolutions.co.uk">info@aportsolutions.co.uk</a> — cerca di descrivere il problema con più dettagli possibile (es. modello di iPhone, versione iOS, cosa stavi facendo quando è successo).</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="anno"></span> Aport Solutions Ltd. &middot; <a href="/">Torna al sito</a>
+  </footer>
+
+  <script>
+    document.getElementById('anno').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
