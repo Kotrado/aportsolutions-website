@@ -140,10 +140,11 @@
       radial-gradient(circle at 70% 70%, rgba(18,193,224,0.16), transparent 55%);
     display:flex; align-items:center; justify-content:center; padding:40px; position:relative;
   }
-  .scioperi-visual svg{width:100%; max-width:280px; height:auto;}
+  .scioperi-visual img{display:block; width:auto; height:auto; max-height:300px; max-width:100%; border-radius:26px; box-shadow:0 18px 40px rgba(0,0,0,0.38), 0 0 0 1px rgba(244,246,248,0.14);}
   @media (max-width:820px){
     .scioperi-panel{grid-template-columns:1fr;}
     .scioperi-visual{order:-1; padding:30px;}
+    .scioperi-visual img{max-height:340px;}
     .scioperi-copy{padding:36px 26px;}
   }
 
@@ -207,11 +208,13 @@
 <section class="hero narrow">
   <div>
     <p style="margin-bottom:14px;"><a href="scioperi.html" style="font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.07em; text-transform:uppercase; color:#0E7C99; text-decoration:none;">Leggi in italiano &rarr;</a></p>
-    <div class="eyebrow">iOS App &middot; In Development</div>
+    <div class="eyebrow">iOS &amp; Android App &middot; Available now</div>
     <h1 class="hero-title">Know before it's <span class="accent">disrupted</span>.</h1>
     <p class="hero-sub">Scioperi tracks strikes and service interruptions across Italy &mdash; transport, public services and more &mdash; so you can see what's disrupted before it disrupts you. Built by APORT Solutions.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#app-review">Privacy &amp; support</a>
+      <a class="btn btn-primary" href="https://apps.apple.com/it/app/scioperi-italia/id6796648627" target="_blank" rel="noopener">Download on the App Store</a>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.aportsolutions.scioperi" target="_blank" rel="noopener">Get it on Google Play</a>
+      <a class="btn btn-ghost" href="#app-review">Privacy &amp; support</a>
       <a class="btn btn-ghost" href="index.html">Back to APORT Solutions</a>
     </div>
   </div>
@@ -220,27 +223,17 @@
 <section class="scioperi-feature" style="padding-top:56px;">
   <div class="scioperi-panel">
     <div class="scioperi-copy">
-      <div class="badge"><span class="dot"></span>Coming soon</div>
+      <div class="badge"><span class="dot"></span>Available now</div>
       <h3>What Scioperi does</h3>
       <p>Scioperi brings together strike notices and service interruptions across Italian transport and public services into a single, easy-to-check view &mdash; with alerts before disruption hits.</p>
       <div class="scioperi-meta">
-        <div><b>Platform</b>iOS</div>
+        <div><b>Platform</b>iOS &middot; Android</div>
         <div><b>Focus</b>Italy &middot; Transport &amp; Services</div>
-        <div><b>Status</b>In development</div>
+        <div><b>Status</b>Available</div>
       </div>
     </div>
     <div class="scioperi-visual">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="55" y="10" width="90" height="180" rx="16" fill="none" stroke="#0E7C99" stroke-width="2" opacity="0.55"/>
-        <circle cx="100" cy="60" r="5" fill="#0E7C99"/>
-        <circle cx="70" cy="100" r="5" fill="#0E7C99" opacity="0.8"/>
-        <circle cx="130" cy="110" r="5" fill="#0E7C99" opacity="0.8"/>
-        <circle cx="100" cy="145" r="5" fill="#0E7C99"/>
-        <line x1="100" y1="60" x2="70" y2="100" stroke="#0E7C99" stroke-width="1.5" opacity="0.6"/>
-        <line x1="100" y1="60" x2="130" y2="110" stroke="#0E7C99" stroke-width="1.5" opacity="0.6"/>
-        <line x1="70" y1="100" x2="100" y2="145" stroke="#0E7C99" stroke-width="1.5" opacity="0.6"/>
-        <line x1="130" y1="110" x2="100" y2="145" stroke="#0E7C99" stroke-width="1.5" opacity="0.6"/>
-      </svg>
+      <img src="splash-scioperi.jpg" width="424" height="760" alt="Scioperi Italia app splash screen: notification bell over a map of Italy" loading="lazy">
     </div>
   </div>
 </section>

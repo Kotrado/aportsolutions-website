@@ -140,10 +140,11 @@
       radial-gradient(circle at 70% 70%, rgba(18,193,224,0.16), transparent 55%);
     display:flex; align-items:center; justify-content:center; padding:40px; position:relative;
   }
-  .scioperi-visual svg{width:100%; max-width:280px; height:auto;}
+  .scioperi-visual img{display:block; width:auto; height:auto; max-height:300px; max-width:100%; border-radius:26px; box-shadow:0 18px 40px rgba(0,0,0,0.38), 0 0 0 1px rgba(244,246,248,0.14);}
   @media (max-width:820px){
     .scioperi-panel{grid-template-columns:1fr;}
     .scioperi-visual{order:-1; padding:30px;}
+    .scioperi-visual img{max-height:340px;}
     .scioperi-copy{padding:36px 26px;}
   }
 
@@ -207,11 +208,13 @@
 <section class="hero narrow">
   <div>
     <p style="margin-bottom:14px;"><a href="scioperi-en.html" style="font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.07em; text-transform:uppercase; color:#0E7C99; text-decoration:none;">Read in English &rarr;</a></p>
-    <div class="eyebrow">App iOS &middot; In sviluppo</div>
+    <div class="eyebrow">App iOS e Android &middot; Disponibile</div>
     <h1 class="hero-title">Sappi in anticipo, prima dell'<span class="accent">interruzione</span>.</h1>
     <p class="hero-sub">Scioperi raccoglie scioperi e interruzioni di servizio in tutta Italia &mdash; trasporti, servizi pubblici e altro &mdash; cos&igrave; puoi vedere cosa &egrave; interrotto prima che ti coinvolga. Realizzata da APORT Solutions.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#app-review">Privacy e supporto</a>
+      <a class="btn btn-primary" href="https://apps.apple.com/it/app/scioperi-italia/id6796648627" target="_blank" rel="noopener">Scarica su App Store</a>
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.aportsolutions.scioperi" target="_blank" rel="noopener">Disponibile su Google Play</a>
+      <a class="btn btn-ghost" href="#app-review">Privacy e supporto</a>
       <a class="btn btn-ghost" href="index.html">Torna a APORT Solutions</a>
     </div>
   </div>
@@ -220,27 +223,17 @@
 <section class="scioperi-feature" style="padding-top:56px;">
   <div class="scioperi-panel">
     <div class="scioperi-copy">
-      <div class="badge"><span class="dot"></span>Prossimamente</div>
+      <div class="badge"><span class="dot"></span>Disponibile ora</div>
       <h3>Cosa fa Scioperi</h3>
       <p>Scioperi riunisce avvisi di sciopero e interruzioni di servizio nei trasporti e servizi pubblici italiani in un'unica vista semplice da consultare &mdash; con avvisi prima che l'interruzione si verifichi.</p>
       <div class="scioperi-meta">
-        <div><b>Piattaforma</b>iOS</div>
+        <div><b>Piattaforma</b>iOS &middot; Android</div>
         <div><b>Ambito</b>Italia &middot; Trasporti e Servizi</div>
-        <div><b>Stato</b>In sviluppo</div>
+        <div><b>Stato</b>Disponibile</div>
       </div>
     </div>
     <div class="scioperi-visual">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="55" y="10" width="90" height="180" rx="16" fill="none" stroke="#0E7C99" stroke-width="2" opacity="0.55"/>
-        <circle cx="100" cy="60" r="5" fill="#0E7C99"/>
-        <circle cx="70" cy="100" r="5" fill="#0E7C99" opacity="0.8"/>
-        <circle cx="130" cy="110" r="5" fill="#0E7C99" opacity="0.8"/>
-        <circle cx="100" cy="145" r="5" fill="#0E7C99"/>
-        <line x1="100" y1="60" x2="70" y2="100" stroke="#0E7C99" stroke-width="1.5" opacity="0.6"/>
-        <line x1="100" y1="60" x2="130" y2="110" stroke="#0E7C99" stroke-width="1.5" opacity="0.6"/>
-        <line x1="70" y1="100" x2="100" y2="145" stroke="#0E7C99" stroke-width="1.5" opacity="0.6"/>
-        <line x1="130" y1="110" x2="100" y2="145" stroke="#0E7C99" stroke-width="1.5" opacity="0.6"/>
-      </svg>
+      <img src="splash-scioperi.jpg" width="424" height="760" alt="Schermata iniziale dell'app Scioperi Italia: campanella di notifica sopra una mappa dell'Italia" loading="lazy">
     </div>
   </div>
 </section>
