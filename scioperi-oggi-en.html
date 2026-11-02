@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strikes in Italy today and tomorrow: trains, flights, local transport | APORT Solutions</title>
+<meta name="description" content="Strikes in Italy today and tomorrow: trains, flights and local transport. List from the Italian Ministry's strike calendar, plus free alerts with the Scioperi Italia app.">
+<meta name="theme-color" content="#082545">
+<link rel="canonical" href="https://aportsolutions.co.uk/scioperi-oggi-en.html">
+<link rel="alternate" hreflang="it" href="https://aportsolutions.co.uk/scioperi-oggi.html">
+<link rel="alternate" hreflang="en" href="https://aportsolutions.co.uk/scioperi-oggi-en.html">
+<link rel="alternate" hreflang="x-default" href="https://aportsolutions.co.uk/scioperi-oggi.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APORT Solutions">
+<meta property="og:title" content="Strikes in Italy today and tomorrow: trains, flights, local transport | APORT Solutions">
+<meta property="og:description" content="Strikes in Italy today and tomorrow: trains, flights and local transport. List from the Italian Ministry's strike calendar, plus free alerts with the Scioperi Italia app.">
+<meta property="og:url" content="https://aportsolutions.co.uk/scioperi-oggi-en.html">
+<meta property="og:image" content="https://aportsolutions.co.uk/splash-scioperi.jpg">
+<meta property="og:locale" content="en_GB">
+<meta name="apple-itunes-app" content="app-id=6796648627">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .oggi{max-width:820px; margin:0 auto; padding:0 40px 56px;}
+  .oggi-top{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:28px;}
+  .oggi-top p.funnel{font-size:17px; font-weight:600; margin:0 0 16px; max-width:46ch; line-height:1.4;}
+  .filters{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 26px; padding:0; border:0;}
+  .filters legend{position:absolute; left:-9999px;}
+  .fbtn{font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; background:transparent; color:var(--navy); border:1px solid var(--line); padding:9px 14px; cursor:pointer; min-height:40px;}
+  .fbtn:hover{border-color:var(--navy);}
+  .fbtn[aria-pressed="true"]{background:var(--navy); color:var(--paper); border-color:var(--navy);}
+  .day{margin:0 0 38px;}
+  .day h2{font-size:clamp(22px,3vw,28px); margin:0 0 4px; font-weight:700; display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;}
+  .day h2 small{font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:500; color:var(--steel); letter-spacing:0.05em; text-transform:uppercase;}
+  .day .count{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--steel); margin:0 0 14px; min-height:1.2em;}
+  .cards{list-style:none; margin:0; padding:0; display:grid; gap:1px; background:var(--line); border:1px solid var(--line);}
+  .cards:empty{display:none;}
+  .card{background:var(--paper); padding:18px 20px;}
+  .card-head{display:flex; flex-wrap:wrap; gap:8px 12px; align-items:center; margin-bottom:8px;}
+  .tag{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; background:var(--navy); color:var(--paper); padding:3px 8px; font-weight:600;}
+  .tag.treni{background:var(--cyan-dark);} .tag.aerei{background:var(--navy);} .tag.locale{background:#2f6f4e;} .tag.altro{background:var(--steel);}
+  .when{font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600;}
+  .where{font-size:15px; font-weight:600; margin:0 0 6px;}
+  .meta{margin:0; font-size:13.5px; line-height:1.55; color:var(--steel);}
+  .meta b{color:var(--navy); font-weight:600;}
+  .state{border:1px solid var(--line); background:var(--panel); padding:18px 20px; font-size:14.5px; line-height:1.6; color:var(--steel);}
+  .state.err{border-left:3px solid #b3261e; color:var(--navy);}
+  .state a{color:var(--cyan-dark);}
+  .state button{font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; background:var(--navy); color:var(--paper); border:0; padding:10px 16px; margin:10px 12px 0 0; cursor:pointer;}
+  .empty{border:1px dashed var(--line); padding:18px 20px; font-size:14.5px; color:var(--steel); line-height:1.6;}
+  .empty b{color:var(--navy);}
+  .empty a{color:var(--cyan-dark);}
+  .spinner{display:inline-block; width:14px; height:14px; border:2px solid var(--line); border-top-color:var(--cyan); border-radius:50%; vertical-align:-2px; margin-right:10px; animation:spin .8s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  @media (prefers-reduced-motion: reduce){ .spinner{animation:none;} }
+  .infobox{max-width:820px; margin:0 auto; padding:0 40px 80px;}
+  .infobox .note-box{margin:0 0 14px;}
+  .infobox a{color:var(--cyan-dark);}
+  .more{max-width:820px; margin:0 auto; padding:0 40px 40px;}
+  .more h2{font-size:22px; margin:0 0 8px;}
+  .more p{font-size:15px; line-height:1.65; color:var(--steel); margin:0 0 6px;}
+  noscript .state{margin:0 0 30px;}
+  @media (max-width:640px){
+    .oggi,.infobox,.more{padding-left:20px; padding-right:20px;}
+    .card{padding:16px;}
+  }
+</style>
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo-mark.png" width="115" height="120" alt="">
+    <span class="brand-name">APORT SOLUTIONS</span>
+  </a>
+  <div class="header-right">
+    <nav class="links" id="site-nav" aria-label="Main">
+    <a href="index.html#services">Services</a>
+    <a href="scioperi-en.html" class="nav-app current" aria-current="page">Scioperi</a>
+    <a href="index.html#about">About</a>
+    <a href="#contact">Contact</a>
+    </nav>
+    <a class="lang" href="scioperi-oggi.html" hreflang="it" lang="it" title="Italiano">IT</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero narrow doc-hero">
+  <div>
+    <div class="eyebrow">Calendar &middot; Italy</div>
+    <h1 class="hero-title">Strikes in Italy <span class="accent">today and tomorrow</span>.</h1>
+    <p class="hero-sub">Strikes scheduled for today and tomorrow in Italy: trains, flights, local transport and more. Data from the Italian Ministry of Infrastructure and Transport calendar.</p>
+  </div>
+</section>
+
+<div class="oggi">
+  <div class="oggi-top">
+    <p class="funnel">Get an alert before the strike, for your cities and your transport</p>
+    <div class="stores on-light">
+        <a class="store" href="https://apps.apple.com/it/app/scioperi-italia/id6796648627" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 20h16"/></svg>
+          <span><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.aportsolutions.scioperi" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17a.8.8 0 001.2.7l14-8.5a.8.8 0 000-1.4l-14-8.5A.8.8 0 006 3.5z"/></svg>
+          <span><small>Get it on</small><strong>Google Play</strong></span>
+        </a>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="state err">JavaScript is turned off, so the list can't be loaded. See the strikes in the <a href="https://apps.apple.com/it/app/scioperi-italia/id6796648627">Scioperi Italia app</a> (<a href="https://apps.apple.com/it/app/scioperi-italia/id6796648627">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.aportsolutions.scioperi">Google Play</a>) or on the <a href="https://scioperi.mit.gov.it/mit2/public/scioperi">official MIT portal</a>.</div>
+  </noscript>
+
+  <div id="status" class="state" role="status" aria-live="polite"><span class="spinner"></span>Loading strikes…</div>
+
+  <fieldset class="filters" id="filters" hidden>
+    <legend>Filter by sector</legend>
+    <button type="button" class="fbtn" data-f="all" aria-pressed="true">All</button>
+    <button type="button" class="fbtn" data-f="treni" aria-pressed="false">Trains</button>
+    <button type="button" class="fbtn" data-f="aerei" aria-pressed="false">Flights</button>
+    <button type="button" class="fbtn" data-f="locale" aria-pressed="false">Local transport</button>
+    <button type="button" class="fbtn" data-f="altro" aria-pressed="false">Other</button>
+  </fieldset>
+
+  <div id="days" hidden>
+    <section class="day" aria-labelledby="h-today">
+      <h2 id="h-today">Today <small id="h-today-date"></small></h2>
+      <p class="count" id="count-today"></p>
+      <ul class="cards" id="list-today"></ul>
+      <div class="empty" id="empty-today" hidden><b class="msg"></b><br>Full list in the app: <a href="https://apps.apple.com/it/app/scioperi-italia/id6796648627" target="_blank" rel="noopener">App Store</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.aportsolutions.scioperi" target="_blank" rel="noopener">Google Play</a></div>
+    </section>
+    <section class="day" aria-labelledby="h-tomorrow">
+      <h2 id="h-tomorrow">Tomorrow <small id="h-tomorrow-date"></small></h2>
+      <p class="count" id="count-tomorrow"></p>
+      <ul class="cards" id="list-tomorrow"></ul>
+      <div class="empty" id="empty-tomorrow" hidden><b class="msg"></b><br>Full list in the app: <a href="https://apps.apple.com/it/app/scioperi-italia/id6796648627" target="_blank" rel="noopener">App Store</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.aportsolutions.scioperi" target="_blank" rel="noopener">Google Play</a></div>
+    </section>
+  </div>
+</div>
+
+<section class="more">
+  <h2>Want to be alerted?</h2>
+  <p>In the app you set up an alert for your cities and your transport and get a notification when a strike is announced. No account needed.</p>
+  <a class="link-quiet dark" href="scioperi-en.html">Discover the Scioperi app &rarr;</a>
+</section>
+
+<section class="infobox" aria-labelledby="info-h">
+  <div class="section-label" id="info-h">Data source</div>
+  <div class="note-box">Data comes from the <a href="https://scioperi.mit.gov.it/mit2/public/scioperi" target="_blank" rel="noopener">strike calendar of the Italian Ministry of Infrastructure and Transport (MIT)</a> and is refreshed several times a day.</div>
+  <div class="note-box">Scioperi Italia is an independent app by APORT Solutions Ltd. It is not affiliated with, endorsed by or operated by the Italian Ministry of Infrastructure and Transport or any government body. Times and details may change: always check the official portal and your service provider.</div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <div>
+        <h2>Let's talk about your assets.</h2>
+        <p>Maximo implementation, ISO 55001 consultancy, or a mobile app worth building.</p>
+      </div>
+      <div class="footer-contact">
+        <div><a href="mailto:info@aportsolutions.co.uk">info@aportsolutions.co.uk</a></div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <div>APORT SOLUTIONS LTD &middot; REGISTERED IN ENGLAND &amp; WALES</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="scioperi-en.html">Scioperi</a>
+        <a href="scioperi-oggi-en.html">Strikes today &amp; tomorrow</a>
+        <a href="privacy-policy-en.html">Privacy Policy</a>
+        <a href="support-en.html">Support</a>
+      </div>
+      <div>&copy; 2026 APORT SOLUTIONS LTD</div>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var API = "https://scioperi-backend.onrender.com/scioperi";
+  var TIMEOUT_MS = 15000;
+  var MONTHS = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec".split(","), DAYS = "Sun,Mon,Tue,Wed,Thu,Fri,Sat".split(",");
+  var T = {"h_from": "from", "h_to": "to", "full_day": "All day", "nationwide": "Nationwide", "label_cat": "Category", "label_union": "Unions", "label_time": "Time", "n_one": "strike", "n_many": "strikes", "empty": "No strikes scheduled", "empty_filter": "No strikes scheduled for this sector", "loading": "Loading strikes…", "warming": "The server is starting up, this can take up to a minute…", "error": "Data temporarily unavailable. Please try again shortly.", "error_link": "Official MIT portal", "retry": "Retry", "mit": "https://scioperi.mit.gov.it/mit2/public/scioperi"};
+  var all = [], filter = "all", dayKeys = {today:null, tomorrow:null};
+
+  function el(id){ return document.getElementById(id); }
+  function make(tag, cls, text){ var n=document.createElement(tag); if(cls) n.className=cls; if(text!=null) n.textContent=text; return n; }
+
+  // Dates are computed for Europe/Rome, not the visitor's timezone.
+  function romeToday(){
+    var p = new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Rome",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+    return p; // YYYY-MM-DD
+  }
+  function addDays(iso, n){
+    var a=iso.split("-"), d=new Date(Date.UTC(+a[0],+a[1]-1,+a[2]+n));
+    return d.toISOString().slice(0,10);
+  }
+  function pretty(iso){
+    var a=iso.split("-"), d=new Date(Date.UTC(+a[0],+a[1]-1,+a[2]));
+    return DAYS[d.getUTCDay()]+" "+(+a[2])+" "+MONTHS[+a[1]-1]+" "+a[0];
+  }
+  function short(iso){ var a=iso.split("-"); return a[2]+"/"+a[1]; }
+
+  function sectorKey(s){
+    var x=(s||"").toLowerCase();
+    if(/ferrov|treni|treno|rail/.test(x)) return "treni";
+    if(/aere|volo|voli|aero|air/.test(x)) return "aerei";
+    if(/locale|tpl|urban|autobus|metro|tram|bus/.test(x)) return "locale";
+    return "altro";
+  }
+
+  function timeText(s){
+    if(s.ora_inizio && s.ora_fine && s.fascia_oraria!=="giornata_intera_assunta"){
+      return T.h_from+" "+s.ora_inizio+" "+T.h_to+" "+s.ora_fine+(s.fascia_oraria==="turni_spezzati"?" *":"");
+    }
+    if(s.fascia_oraria==="giornata_intera_assunta") return T.full_day;
+    return "";
+  }
+
+  function card(s, dayIso){
+    var li=make("li","card"), key=sectorKey(s.settore);
+    var head=make("div","card-head");
+    head.appendChild(make("span","tag "+key, s.settore||"—"));
+    var when = timeText(s);
+    if(when) head.appendChild(make("span","when",when));
+    if(s.inizio_data!==s.fine_data) head.appendChild(make("span","when",short(s.inizio_data)+" → "+short(s.fine_data)));
+    li.appendChild(head);
+
+    var loc;
+    if(!s.regione || s.regione==="Italia") loc=T.nationwide;
+    else loc=(s.provincia && s.provincia!=="Tutte") ? s.provincia+" ("+s.regione+")" : s.regione;
+    li.appendChild(make("p","where",loc));
+
+    var m=make("p","meta");
+    function line(label,val){
+      if(!val) return;
+      var b=make("b",null,label+": "); m.appendChild(b); m.appendChild(document.createTextNode(val)); m.appendChild(document.createElement("br"));
+    }
+    line(T.label_cat, s.categoria);
+    line(T.label_union, s.sindacati);
+    if(!timeText(s)) line(T.label_time, (s.modalita_originale||"").slice(0,200));
+    li.appendChild(m);
+    return li;
+  }
+
+  function covers(s, iso){ return s.inizio_data<=iso && s.fine_data>=iso; }
+  function byTime(a,b){ return (a.ora_inizio||"99:99").localeCompare(b.ora_inizio||"99:99"); }
+
+  function renderDay(name, iso){
+    var list=el("list-"+name), count=el("count-"+name), empty=el("empty-"+name);
+    var day=all.filter(function(s){return covers(s,iso);}).sort(byTime);
+    var shown=day.filter(function(s){return filter==="all"||sectorKey(s.settore)===filter;});
+    list.textContent="";
+    shown.forEach(function(s){ list.appendChild(card(s,iso)); });
+    count.textContent = shown.length+" "+(shown.length===1?T.n_one:T.n_many);
+    empty.hidden = shown.length>0;
+    empty.querySelector(".msg").textContent = (filter!=="all" && day.length>0)? T.empty_filter : T.empty;
+  }
+
+  function renderAll(){
+    renderDay("today", dayKeys.today);
+    renderDay("tomorrow", dayKeys.tomorrow);
+  }
+
+  function setStatus(kind, html){
+    var st=el("status");
+    st.textContent="";
+    if(!kind){ st.hidden=true; return; }
+    st.hidden=false;
+    st.className="state"+(kind==="err"?" err":"");
+    if(kind==="loading"){
+      st.appendChild(make("span","spinner")); st.appendChild(document.createTextNode(html));
+    } else if(kind==="err"){
+      st.appendChild(make("strong",null,T.error)); st.appendChild(document.createElement("br"));
+      var a=make("a",null,T.error_link); a.href=T.mit; a.target="_blank"; a.rel="noopener"; st.appendChild(a);
+      st.appendChild(document.createElement("br"));
+      var b=make("button",null,T.retry); b.type="button"; b.addEventListener("click",load); st.appendChild(b);
+    }
+  }
+
+  function showDays(on){ el("days").hidden=!on; el("filters").hidden=!on; }
+
+  var seq=0;
+  function load(){
+    var mine=++seq;
+    var today=romeToday(); dayKeys.today=today; dayKeys.tomorrow=addDays(today,1);
+    el("h-today-date").textContent=pretty(dayKeys.today);
+    el("h-tomorrow-date").textContent=pretty(dayKeys.tomorrow);
+    showDays(false);
+    setStatus("loading", T.loading);
+    var warm=setTimeout(function(){ if(mine===seq) setStatus("loading", T.warming); }, 4000);
+    var ctl=new AbortController();
+    var to=setTimeout(function(){ ctl.abort(); }, TIMEOUT_MS);
+    fetch(API+"?da="+dayKeys.today+"&a="+dayKeys.tomorrow,{signal:ctl.signal,headers:{"Accept":"application/json"}})
+      .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+      .then(function(data){
+        if(mine!==seq) return;
+        if(!Array.isArray(data)) throw new Error("bad payload");
+        all=data; setStatus(null); showDays(true); renderAll();
+      })
+      .catch(function(){ if(mine!==seq) return; setStatus("err"); })
+      .then(function(){ clearTimeout(warm); clearTimeout(to); });
+  }
+
+  var fb=el("filters");
+  fb.addEventListener("click",function(e){
+    var b=e.target.closest("button[data-f]"); if(!b) return;
+    filter=b.getAttribute("data-f");
+    Array.prototype.forEach.call(fb.querySelectorAll("button"),function(x){ x.setAttribute("aria-pressed", x===b?"true":"false"); });
+    renderAll();
+  });
+
+  load();
+})();
+</script>
+</body>
+</html>
